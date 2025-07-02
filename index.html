@@ -22,34 +22,35 @@
     header {
       background: #2e7d32;
       color: #fff;
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      padding: 20px 20px 10px;
+      text-align: center;
     }
 
     .logo-container {
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
     }
 
     .logo-container img {
-      height: 40px;
+      height: 45px;
       width: auto;
     }
 
     .logo-container h1 {
-      font-size: 28px;
+      font-size: 30px;
     }
 
     nav {
       display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
+      gap: 20px;
       justify-content: center;
-      margin-top: 10px;
+      flex-wrap: wrap;
+      margin-top: 5px;
+      padding-bottom: 10px;
     }
 
     nav a {
@@ -77,17 +78,30 @@
     }
 
     .btn-green {
-      background-color: #66bb6a;
+      background-color: #388e3c;
       color: white;
       padding: 12px 24px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 500;
       transition: background 0.3s ease;
+      display: inline-block;
     }
 
     .btn-green:hover {
-      background-color: #388e3c;
+      background-color: #2e7d32;
+    }
+
+    /* Footer-specific override */
+    footer .btn-green {
+      background-color: #a5d6a7;
+      color: #1b5e20;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    footer .btn-green:hover {
+      background-color: #81c784;
     }
 
     .features {
@@ -184,59 +198,42 @@
       color: #555;
     }
 
-    footer {
-      background: #2e7d32;
-      color: white;
-      padding: 40px 20px;
-      font-size: 14px;
-      text-align: center;
-    }
-
     .contact-info {
-      margin-top: 30px;
-    }
-
-    .contact-info i {
-      font-size: 24px;
-      margin-bottom: 5px;
-      display: inline-block;
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #2e7d32;
+      color: white;
     }
 
     .contact-info h4 {
       font-size: 18px;
       font-weight: bold;
-      margin: 10px 0 5px;
+      margin: 15px 0 5px;
     }
 
     .contact-info p {
       margin-bottom: 10px;
     }
 
-    footer .btn-green {
-      display: inline-block;
-      margin: 10px auto;
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 40px 20px 20px;
     }
 
     @media (max-width: 768px) {
       header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-      }
-
-      nav a {
-        padding: 5px 10px;
-        font-size: 15px;
+        padding: 15px;
       }
 
       .logo-container {
+        flex-direction: row;
         justify-content: center;
-        width: 100%;
+      }
+
+      nav a {
+        font-size: 15px;
       }
     }
   </style>
@@ -315,7 +312,6 @@
   </section>
 
   <footer id="contact">
-    <!-- Google Maps Embed with Marker -->
     <div style="margin: 40px auto; max-width: 1000px;">
       <iframe
         src="https://maps.google.com/maps?q=A-11%20Shiv%20Ananta%20Chandkheda%20Ahmedabad%20Gujarat%20382424&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -337,11 +333,10 @@
       <i>📧</i>
       <h4>Email</h4>
       <p>rvhealthcare87@gmail.com</p>
-    </div>
 
-    <div>
       <a href="mailto:rvhealthcare87@gmail.com?subject=Inquiry&body=Dear%20RV%20Healthcare," class="btn-green">Send a Message</a>
     </div>
+
     <p style="margin-top: 20px;">&copy; 2025 RV Healthcare. All Rights Reserved.</p>
   </footer>
 </body>
