@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RV Healthcare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2e7d32;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero-alt {
+      background: #c8e6c9;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-alt h1 {
+      font-size: 48px;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .hero-alt p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn-green {
+      background-color: #81c784;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 60px auto;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 2px solid #a5d6a7;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .feature-card h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 17px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    footer a.btn-green {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RV Healthcare</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+    </nav>
+  </header>
+
+  <section class="hero-alt">
+    <h1>Innovative Healthcare Solutions</h1>
+    <p>Quality medicines, accessible pricing, pan-India reach.</p>
+    <a href="#contact" class="btn-green">Contact Us Today</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>RV Healthcare is dedicated to improving global health through innovation, accessibility, and unwavering commitment to quality.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>GMP Certified</h3>
+      <p>We maintain the highest manufacturing standards.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Pan-India Reach</h3>
+      <p>Supplying trusted products across the country.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Affordable Pricing</h3>
+      <p>Ensuring access to essential medicines for all.</p>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <p>We offer pharmaceutical R&D, third-party manufacturing, and expert healthcare consultancy tailored to your needs.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <p><a href="products.html" class="btn-green">View All Medicines</a></p>
+  </section>
+
+  <footer id="contact">
+    <p><strong>Contact Us</strong></p>
+    <p>Email: info@rvhealthcare.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: New Delhi, India</p>
+    <a href="mailto:info@rvhealthcare.com" class="btn-green">Send a Message</a>
+    <p style="margin-top: 20px;">&copy; 2025 RV Healthcare. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

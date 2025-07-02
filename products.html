@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Medicines | RV Healthcare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1b5e20, #43a047);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+    }
+
+    .section {
+      width: 100%;
+      background: #ffffff;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    .medicine-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .medicine-card {
+      background: #fafafa;
+      border: 1px solid #c8e6c9;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .medicine-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .medicine-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .medicine-card h3 {
+      font-size: 20px;
+      color: #2e7d32;
+      margin-bottom: 8px;
+    }
+
+    .medicine-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .center-button {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    a.btn-green {
+      background: linear-gradient(90deg, #66bb6a, #43a047);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    a.btn-green:hover {
+      background: #2e7d32;
+    }
+
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      width: 100%;
+      box-shadow: inset 0 2px 8px rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Medicines</h1>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Available Products</h2>
+      <div class="medicine-grid">
+        <div class="medicine-card">
+          <img src="https://via.placeholder.com/200x150.png?text=Paracetamol" alt="Paracetamol">
+          <h3>Paracetamol 500mg</h3>
+          <p>Fever & pain relief</p>
+        </div>
+        <div class="medicine-card">
+          <img src="https://via.placeholder.com/200x150.png?text=Azithromycin" alt="Azithromycin">
+          <h3>Azithromycin 250mg</h3>
+          <p>Antibiotic for infections</p>
+        </div>
+        <div class="medicine-card">
+          <img src="https://via.placeholder.com/200x150.png?text=Omeprazole" alt="Omeprazole">
+          <h3>Omeprazole 20mg</h3>
+          <p>Acidity & heartburn control</p>
+        </div>
+        <!-- Add more products similarly -->
+      </div>
+      <div class="center-button">
+        <a href="index.html" class="btn-green">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RV Healthcare. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
