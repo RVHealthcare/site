@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RV Healthcare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2e7d32;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container img {
+      height: 40px;
+      width: auto;
+    }
+
+    .logo-container h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .hero-alt {
+      background: #c8e6c9;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-alt h1 {
+      font-size: 48px;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .hero-alt p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn-green {
+      background-color: #66bb6a;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .btn-green:hover {
+      background-color: #388e3c;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 60px auto;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 2px solid #a5d6a7;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .feature-card h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 17px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .product-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .product-preview-card {
+      background: #fafafa;
+      border: 1px solid #c8e6c9;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-preview-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .product-preview-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .product-preview-card h3 {
+      font-size: 18px;
+      color: #2e7d32;
+      margin-bottom: 6px;
+    }
+
+    .product-preview-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      padding: 40px 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    .contact-info h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    footer .btn-green {
+      display: inline-block;
+      margin: 10px auto;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      nav a {
+        padding: 5px 10px;
+        font-size: 15px;
+      }
+
+      .logo-container {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="R%20V%20_%20HEALTH%20CARE%20_%20LOGO.png" alt="RV Healthcare Logo" />
+      <h1>RV Healthcare</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+    </nav>
+  </header>
+
+  <section class="hero-alt">
+    <h1>Innovative Healthcare Solutions</h1>
+    <p>Quality Medicines, Accessible Pricing & Pan-India Reach.</p>
+    <a href="#contact" class="btn-green">Contact Us Today</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>RV Healthcare is dedicated to improving global health through innovation, accessibility, and unwavering commitment to quality.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>GMP Certified</h3>
+      <p>We maintain the highest manufacturing standards.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Pan-India Reach</h3>
+      <p>Supplying trusted products across the country.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Affordable Pricing</h3>
+      <p>Ensuring access to essential medicines for all.</p>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <p>We offer pharmaceutical R&D, third-party manufacturing, and expert healthcare consultancy tailored to your needs.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="product-preview-grid">
+      <div class="product-preview-card">
+        <img src="Aloe Bath Soap.jpg" alt="Aloe Bath Soap">
+        <h3>Aloevior Bath Soap</h3>
+        <p>100% Natural, minimum 78% TFM, Grade 1 Bathing bar</p>
+      </div>
+      <div class="product-preview-card">
+        <img src="EVA-VR.jpg" alt="EVA-VR Capsules">
+        <h3>EVA-VR Capsules</h3>
+        <p>To Control Abnormal Menstrual Bleeding</p>
+      </div>
+      <div class="product-preview-card">
+        <img src="Muscal-VR oil.jpg" alt="Muscal-VR Oil">
+        <h3>Muscal-VR Oil</h3>
+        <p>Proven Formula for Muscular pains, Sprains & Lumbago</p>
+      </div>
+      <div class="product-preview-card">
+        <img src="RV Platex Syrup.jpg" alt="RV Platex Syrup">
+        <h3>RV Platex Syrup</h3>
+        <p>Increases Platelet Count</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="products.html" class="btn-green">View All Medicines</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <!-- Google Maps Embed with Marker -->
+    <div style="margin: 40px auto; max-width: 1000px;">
+      <iframe
+        src="https://maps.google.com/maps?q=A-11%20Shiv%20Ananta%20Chandkheda%20Ahmedabad%20Gujarat%20382424&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%" 
+        height="350" 
+        style="border:0; border-radius: 10px;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="contact-info">
+      <i>📍</i>
+      <h4>Head Office</h4>
+      <p>A-11, Ground Floor, Shiv Ananta, Chandkheda, Ahmedabad, Gujarat, 382424</p>
+      <i>📞</i>
+      <h4>Call Us</h4>
+      <p>+91 7276110011 / +91 9723221257</p>
+      <i>📧</i>
+      <h4>Email</h4>
+      <p>rvhealthcare87@gmail.com</p>
+    </div>
+
+    <div>
+      <a href="mailto:rvhealthcare87@gmail.com?subject=Inquiry&body=Dear%20RV%20Healthcare," class="btn-green">Send a Message</a>
+    </div>
+    <p style="margin-top: 20px;">&copy; 2025 RV Healthcare. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
